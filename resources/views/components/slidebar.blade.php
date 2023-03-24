@@ -15,7 +15,7 @@
               data-feather="briefcase"></i><span>Setup</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="{{ route('category.index') }}">Category setup</a></li>
-            <li><a class="nav-link" href="">Posts</a></li>
+            <li><a class="nav-link" href="{{ route('post.index') }}">Post</a></li>
           </ul>
         </li>
       </ul>

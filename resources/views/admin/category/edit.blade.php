@@ -7,11 +7,13 @@
                         <a href="">Back</a>
                     </div>
                     <div class="card-body">
-                        <form action="{{ route("category.update") }}" method="post">
+                        <form action="{{ route("category.update",$category->id) }}" method="post">
                         @csrf
+                        @method('put')
                         <div class="form-group">
                           <label for="name">Category Name</label>
-                          <input type="text" name="name" id="" class="form-control" placeholder="eg.Sports" aria-describedby="helpId">
+                          <input type="text" name="name" id="" class="form-control" placeholder="eg.Sports" value="{{ $category->name }}">
+                          <button type="submit">Update Record</button>
                         </div>
                         </form>
                     </div>

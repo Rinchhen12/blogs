@@ -8,14 +8,14 @@
       <ul class="sidebar-menu">
         <li class="menu-header">Main</li>
         <li class="dropdown active">
-          <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+          <a href="{{ route('dashboard') }}" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
         </li>
         <li class="dropdown">
           <a href="#" class="menu-toggle nav-link has-dropdown"><i
               data-feather="briefcase"></i><span>Setup</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="{{ route('category.index') }}">Category setup</a></li>
-            <li><a class="nav-link" href="">Data Widgets</a></li>
+            <li><a class="nav-link" href="">Posts</a></li>
           </ul>
         </li>
       </ul>
